@@ -8,8 +8,8 @@ const Wrapper = styled.div`
     align-items: center;
     gap: 5vw;
     padding: 10vw;
-    background: rgb(81,218,207);
-    background: linear-gradient(0deg, rgba(81,218,207,1) 0%, rgba(255,255,255,1) 100%);
+    background: rgb(245,223,129);
+    background: linear-gradient(0deg, rgba(245,223,129,1) 0%, rgba(255,255,255,1) 100%);
 `
 
 

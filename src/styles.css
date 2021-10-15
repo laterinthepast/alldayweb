@@ -15,6 +15,10 @@
   text-decoration: none;
 }
 
+body {
+  width: 100%;
+}
+
 /* buttons */
 button {
   width: 10vw;

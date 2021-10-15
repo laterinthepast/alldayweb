@@ -6,7 +6,8 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     padding-bottom: 7vw;
-`
+    overflow: hidden;
+   `
 
 const SliderItem = styled.div`
     display: flex !important;
@@ -20,10 +21,8 @@ const SliderItem = styled.div`
         width: 50%;
         img {
             width: 70%;
-            
            }
         &-two {
-           
         }
     }
     .slider-info {
@@ -55,7 +54,6 @@ const Portfolio = () => {
 
     return (
         <Wrapper>
-
             <Slider {...settings}>
                 <SliderItem>
                     <div className="slider-img">

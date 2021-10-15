@@ -13,7 +13,7 @@ import Services from '../components/Services';
 
 
 const Wrapper = styled.div`
-    width: 100%;
+    
 `
 
 const MainPage = () => {
