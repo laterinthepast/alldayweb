@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import About from '../components/About';
-import Contact from '../components/Contact';
+import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
@@ -25,7 +25,7 @@ const MainPage = () => {
             <Portfolio/>
             <Offer/>
             <About/>
-            <Contact/>
+            <ContactForm/>
             <Footer/>
         </Wrapper>
     )
