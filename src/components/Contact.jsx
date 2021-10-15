@@ -17,6 +17,9 @@ const Contact = () => {
           <label>Email <input type="email" name="email" /></label>
         </p>
         <p>
+          <label>Message <input type="text" name="message" /></label>
+        </p>
+        <p>
           <button type="submit">Send</button>
         </p>
       </form>
