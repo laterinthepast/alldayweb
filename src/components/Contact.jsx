@@ -22,7 +22,7 @@ const Container = styled.div`
   border-radius: 30px;
   h1 {
     padding-bottom: 3vw;
-    font-size: 2.2vw;
+    font-size: 2.2rem;
     font-weight: 900;
   }
   .input-values {

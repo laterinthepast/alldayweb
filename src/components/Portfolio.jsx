@@ -29,11 +29,11 @@ const SliderItem = styled.div`
         padding: 5vw 5vw 5vw 0;
         width: 50%;
         h1 {
-            font-size: 3vw;
+            font-size: 3rem;
             font-weight: 800;
         }
         p {
-            font-size: 1.3vw;
+            font-size: 1.3rem;
             line-height: 1.8vw;
             padding: 2vw 0;
         }

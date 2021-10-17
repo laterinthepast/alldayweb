@@ -17,9 +17,8 @@ const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     .offer-title {
-        
         h2{
-            font-size: 3vw;
+            font-size: 3rem;
             font-weight: 800;  
         }
         
@@ -35,14 +34,14 @@ const Container = styled.div`
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 30px;
     p {
-        font-size: 2vw;
+        font-size: 1.7rem;
         padding-bottom: 5vw;
     }
     h5 {
         position: absolute;
         bottom: 5vw;
         right: 5vw;
-        font-size: 3vw;
+        font-size: 2.5rem;
         font-weight: 200;
         span {
             font-weight: 900;

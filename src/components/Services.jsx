@@ -51,7 +51,7 @@ const RowS = styled.div`
     position: relative;
     
     h1 {
-        font-size: 4.5vw;
+        font-size: 4rem;
         font-weight: 900;
         position: absolute;
         top: 7vw;
@@ -70,7 +70,7 @@ const RowS = styled.div`
         text-align: center;
         li {
             font-weight: 200;
-            font-size: 2.5vw;
+            font-size: 2rem;
             line-height: 4vw;
             border-bottom: 1px solid #000;
             padding: 1vw;
@@ -79,6 +79,7 @@ const RowS = styled.div`
     button {
         width: 17vw;
         height: 5vw;
+        font-size: 2rem;
     }
     
 `

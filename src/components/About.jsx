@@ -10,6 +10,9 @@ const Wrapper = styled.div`
     padding: 10vw;
     background: rgb(245,223,129);
     background: linear-gradient(0deg, rgba(245,223,129,1) 0%, rgba(255,255,255,1) 100%);
+    h3 {
+        font-size: 1.5rem;
+    }
 `
 
 
