@@ -123,7 +123,7 @@ const Offer = () => {
                 </div>
                 <div className="container-info">
                     <p>Customisation of the theme of your choice can be a good solution for a start. Simply find what you like and let us do the rest.</p>
-                    <a href="/themes">
+                    <a href="themes">
                         <button className="btn-empty">choose your theme</button>
                     </a>
                 </div>
