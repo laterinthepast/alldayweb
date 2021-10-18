@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 
 const About = () => {
     return (
-        <Wrapper>
+        <Wrapper id="about">
             <img src={logo} alt="" />
             <h3>We are a newly established web development agency based in UK. Simple and specious designs and quick builds this is what we do.
                 Contact us for any queries and do not hesitate to ask questions.

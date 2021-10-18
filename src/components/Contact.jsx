@@ -78,6 +78,8 @@ const Container = styled.div`
       .submit {
         margin-top: 10vw;
         padding: 2vw;
+        width: 40vw;
+        height: 10vw;
       }
     }
   }
@@ -88,7 +90,7 @@ const Contact = () => {
 
   return (
 
-    <Wrapper>
+    <Wrapper id="contact">
       <Container>
         <h1>Contact us</h1>
         <form name="contact" method="post">

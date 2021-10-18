@@ -7,15 +7,13 @@ import { faKeyboard, faSitemap } from '@fortawesome/free-solid-svg-icons';
 
 const WrapperMobile = styled.div`
 `
-
 const NavListMobile = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     position: sticky;
-    padding: 3vw;
-     
+    padding: 3vw;   
 `
 const NavItemMobile = styled.div`
     a {
@@ -23,9 +21,11 @@ const NavItemMobile = styled.div`
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    font-size: 0.8rem;
-    font-weight: 800;
-    }    
+    font-size: 1.2rem;
+    p {
+        font-size: 1rem;
+    }
+}    
 `
 const WrapperDesk = styled.div`
     display: flex;
@@ -45,7 +45,6 @@ const NavList = styled.div`
     justify-content: center;
     align-items: center;
 `
-
 const NavItem = styled.div`
     .nav-link {
         width: 10vw;
@@ -66,7 +65,6 @@ const NavItem = styled.div`
         }
     }
 `
-
 const NavItems = [
     {
         name: 'about us',
@@ -89,6 +87,7 @@ const NavItems = [
         id: 4
     }
 ]
+
 const Navbar = () => {
     const [windowDimension, setWindowDimension] = useState(null);
     useEffect(() => {
@@ -108,22 +107,26 @@ const Navbar = () => {
                 <WrapperMobile>
                     <NavListMobile>
                         <NavItemMobile>
-                            <a href="/" className="mobile-link">about
+                            <a href="#about" className="mobile-link">
+                                <p>about</p>
                                 <FontAwesomeIcon icon={faUser} />
                             </a>
                         </NavItemMobile>
                         <NavItemMobile>
-                            <a href="/" className="mobile-link">services
+                            <a href="#services" className="mobile-link">
+                                <p>services</p>
                                 <FontAwesomeIcon icon={faSitemap} />
                             </a>
                         </NavItemMobile>
                         <NavItemMobile>
-                            <a href="/" className="mobile-link">work
+                            <a href="#work" className="mobile-link">
+                                <p>work</p>
                                 <FontAwesomeIcon icon={faKeyboard} />
                             </a>
                         </NavItemMobile>
                         <NavItemMobile>
-                            <a href="/" className="mobile-link">contact
+                            <a href="#contact" className="mobile-link">
+                                <p>contact</p>
                                 <FontAwesomeIcon icon={faComment} />
                             </a>
                         </NavItemMobile>
