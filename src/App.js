@@ -1,7 +1,7 @@
 import MainPage from './pages/MainPage'
 import '../node_modules/slick-carousel/slick/slick.css'
 import '../node_modules/slick-carousel/slick/slick-theme.css'
-import { Router, Switch, Route } from 'react-router';
+import { Switch, Route } from 'react-router';
 import Themes from './pages/Themes';
 import { BrowserRouter } from 'react-router-dom';
 

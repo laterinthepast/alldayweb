@@ -114,7 +114,7 @@ const Container = styled.div`
 const Offer = () => {
     return (
         <Wrapper>
-            <div className="offer-title">
+            <div className="offer-title" id="offer">
                 <h2>pre-built themes with customisation</h2>
             </div>
             <Container>

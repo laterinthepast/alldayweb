@@ -72,8 +72,8 @@ const NavItems = [
         id: 1
     },
     {
-        name: 'services',
-        href: '#services',
+        name: 'offer',
+        href: '#offer',
         id: 2
     },
     {
@@ -113,8 +113,8 @@ const Navbar = () => {
                             </a>
                         </NavItemMobile>
                         <NavItemMobile>
-                            <a href="#services" className="mobile-link">
-                                <p>services</p>
+                            <a href="#offer" className="mobile-link">
+                                <p>offer</p>
                                 <FontAwesomeIcon icon={faSitemap} />
                             </a>
                         </NavItemMobile>
