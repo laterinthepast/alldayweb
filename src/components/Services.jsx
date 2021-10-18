@@ -137,24 +137,24 @@ const Services = () => {
     return (
         <Wrapper id="services">
             <Row>
-            <Container>
-                <h2>custom design</h2>
-                <img src={services1} alt=""/>
-            </Container>
-            <Container>
-                <h2>personalised functionality</h2>
-                <img src={services2} alt=""/>
-            </Container>
+                <Container>
+                    <h2>custom design</h2>
+                    <img src={services1} alt="" />
+                </Container>
+                <Container>
+                    <h2>personalised functionality</h2>
+                    <img src={services2} alt="" />
+                </Container>
             </Row>
             <Row>
-            <Container>
-                <h2>free hosting</h2>
-                <img src={services3} alt=""/>
-            </Container>
-            <Container>
-                <h2>why we don't use wordpress</h2>
-                <img src={services4} alt=""/>
-            </Container>
+                <Container>
+                    <h2>free hosting</h2>
+                    <img src={services3} alt="" />
+                </Container>
+                <Container>
+                    <h2>why we don't use wordpress</h2>
+                    <img src={services4} alt="" />
+                </Container>
             </Row>
             <RowS>
                 <h1>website maintenance</h1>
@@ -162,10 +162,12 @@ const Services = () => {
                     <li>regular updates</li>
                     <li>site backup</li>
                     <li>monthly traffic reports</li>
-                    <li>SEO reports</li> <br/>
-                    <button className="btn-empty">contact</button>
+                    <li>SEO reports</li> <br />
+                    <a href="#contact">
+                        <button className="btn-empty">contact</button>
+                    </a>
                 </ul>
-                
+
             </RowS>
         </Wrapper>
     )

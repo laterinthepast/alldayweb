@@ -96,7 +96,7 @@ const SliderItems = [
         href: "https://quartz-scientific.netlify.app/",
     },
     {
-        id: 1,
+        id: 4,
         img: project4desk,
         title: "cryptofolio",
         desc: "Cryptofolio is my latest project and not yet done. Cryptocurrencies wallet with charts and all the necesarry info about your fauvorites coins. Will be built on React, styled components and Node.js for backend. Work in progress - possible finish by the end of 2021.",
@@ -116,8 +116,8 @@ const Portfolio = () => {
     return (
         <Wrapper id="work">
             <Slider {...settings}>
-                {SliderItems.map(({ img, title, desc, href,i }) => (
-                    <SliderItem className="nav-item" key={i} >
+                {SliderItems.map(({ img, title, desc, href,id }) => (
+                    <SliderItem className="nav-item" key={id} >
                         <div className="slider-img">
                             <img className="slider-img-one" src={img} alt=""/>
                         </div>
