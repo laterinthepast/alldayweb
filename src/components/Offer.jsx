@@ -137,7 +137,7 @@ const Offer = () => {
                     <img src={offer2} alt="" />
                 </div>
                 <div className="container-info">
-                    <p>Customisation of the theme of your choice can be a good solution for a start. Simply find what you like and let us do the rest.</p>
+                    <p>We design and build your website from scratch. Allos for great level of personalisation of the web.</p>
                     <a href="#services">
                         <button className="btn-empty">contact</button>
                     </a>
