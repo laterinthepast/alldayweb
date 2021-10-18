@@ -8,8 +8,8 @@ const Wrapper = styled.div`
     align-items: center;
     gap: 5vw;
     padding: 10vw;
-    background: rgb(245,223,129);
-    background: linear-gradient(0deg, rgba(245,223,129,1) 0%, rgba(255,255,255,1) 100%);
+    background: rgb(75,202,198);
+    background: linear-gradient(0deg, rgba(75,202,198,1) 0%, rgba(255,255,255,1) 100%);
     h3 {
         font-size: 1.5rem;
     }

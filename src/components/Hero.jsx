@@ -28,7 +28,7 @@ const Left = styled.div`
     width: 50vw;
     padding-left: 10vw;
     h1 {
-        font-size: 3rem;
+        font-size: 4vw;
         font-weight: 600;
     }
     p {

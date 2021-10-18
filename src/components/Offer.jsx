@@ -19,8 +19,7 @@ const Wrapper = styled.div`
         h2{
             font-size: 3rem;
             font-weight: 800;  
-        }
-        
+        }  
     }
     @media (max-width:768px){
         .offer-title {
@@ -48,8 +47,8 @@ const Container = styled.div`
     }
     h5 {
         position: absolute;
-        bottom: 5vw;
-        right: 5vw;
+        bottom: 1vw;
+        right: 1vw;
         font-size: 2.5rem;
         font-weight: 200;
         span {
@@ -78,7 +77,7 @@ const Container = styled.div`
         align-items: center;
         margin: 0;
         padding: 5vw;
-        border-bottom: 1px solid #000;
+        
         border-radius:0 ;
     p {
         font-size: 1.5rem;
@@ -143,7 +142,7 @@ const Offer = () => {
                         <button className="btn-empty">contact</button>
                     </a>
                 </div>
-                <h5>from <span>250£</span></h5>
+                <h5>from <span>500£</span></h5>
             </Container>
         </Wrapper>
     )

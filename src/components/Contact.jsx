@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(245,223,129,1) 100%);
+  background: rgb(26,50,121);
+  background: linear-gradient(0deg, rgba(26,50,121,1) 0%, rgba(75,202,198,1) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +42,8 @@ const Container = styled.div`
     }
     
     .submit {
+      width: 15vw;
+      height: 5vw;
       margin-top: 2vw;
       padding: 2vw;
     }

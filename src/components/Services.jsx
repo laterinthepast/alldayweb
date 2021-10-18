@@ -34,10 +34,11 @@ const Container = styled.div`
     width: 15vw;
     h2 {
         font-weight: 900;
+        font-size: 1.2rem;
     }
     img {
         padding: 1vw;
-        width: 60%;
+        width: 70%;
     }
     @media (max-width:768px){
         padding: 0;
