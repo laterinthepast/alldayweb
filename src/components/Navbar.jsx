@@ -1,8 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components';
 import logo from '../images/logo1.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faComment, faUser } from '@fortawesome/free-regular-svg-icons';
+import { faKeyboard, faSitemap } from '@fortawesome/free-solid-svg-icons';
 
-const Wrapper = styled.div`
+const WrapperMobile = styled.div`
+`
+
+const NavListMobile = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    padding: 3vw;
+     
+`
+const NavItemMobile = styled.div`
+    a {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 800;
+    }    
+`
+const WrapperDesk = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,6 +45,7 @@ const NavList = styled.div`
     justify-content: center;
     align-items: center;
 `
+
 const NavItem = styled.div`
     .nav-link {
         width: 10vw;
@@ -40,6 +66,7 @@ const NavItem = styled.div`
         }
     }
 `
+
 const NavItems = [
     {
         name: 'about us',
@@ -63,19 +90,60 @@ const NavItems = [
     }
 ]
 const Navbar = () => {
+    const [windowDimension, setWindowDimension] = useState(null);
+    useEffect(() => {
+        setWindowDimension(window.innerWidth);
+    }, [])
+    useEffect(() => {
+        function handleResize() {
+            setWindowDimension(window.innerWidth)
+        }
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, [])
+    const isMobile = windowDimension <= 768;
     return (
-        <Wrapper>
-            <div className="nav-logo">
-                <img src={logo} alt="" />
-            </div>
-            <NavList>
-                {NavItems.map(({ name, href, id }) => (
-                    <NavItem className="nav-item" key={id} >
-                        <a href={href} className="nav-link">{name}</a>
-                    </NavItem>
-                ))}
-            </NavList>
-        </Wrapper>
+        <div>
+            {isMobile ? (
+                <WrapperMobile>
+                    <NavListMobile>
+                        <NavItemMobile>
+                            <a href="/" className="mobile-link">about
+                                <FontAwesomeIcon icon={faUser} />
+                            </a>
+                        </NavItemMobile>
+                        <NavItemMobile>
+                            <a href="/" className="mobile-link">services
+                                <FontAwesomeIcon icon={faSitemap} />
+                            </a>
+                        </NavItemMobile>
+                        <NavItemMobile>
+                            <a href="/" className="mobile-link">work
+                                <FontAwesomeIcon icon={faKeyboard} />
+                            </a>
+                        </NavItemMobile>
+                        <NavItemMobile>
+                            <a href="/" className="mobile-link">contact
+                                <FontAwesomeIcon icon={faComment} />
+                            </a>
+                        </NavItemMobile>
+                    </NavListMobile>
+                </WrapperMobile>
+            ) : (
+                <WrapperDesk>
+                    <div className="nav-logo">
+                        <img src={logo} alt="" />
+                    </div>
+                    <NavList>
+                        {NavItems.map(({ name, href, id }) => (
+                            <NavItem className="nav-item" key={id} >
+                                <a href={href} className="nav-link">{name}</a>
+                            </NavItem>
+                        ))}
+                    </NavList>
+                </WrapperDesk>
+            )}
+        </div>
     )
 }
 

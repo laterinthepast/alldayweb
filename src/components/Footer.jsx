@@ -1,3 +1,4 @@
+
 import React from 'react'
 import styled from 'styled-components';
 import logo from '../images/logo.png'
@@ -15,6 +16,17 @@ const Wrapper = styled.div`
         width: 10%;
     }
     background-color: #fff;
+    @media (max-width:768px){
+        img {
+            width: 30%;
+        }
+        h1 {
+            font-size: 0.7rem;
+            
+            text-align: center;
+        }
+        
+    }
 `
 
 
@@ -22,7 +34,8 @@ const Footer = () => {
     return (
         <Wrapper>
             <img src={logo} alt=""/>
-            <h1>all rights reserved 2021</h1>
+            
+            <h1>&copy; all rights reserved 2021 alldayweb</h1>
         </Wrapper>
     )
 }

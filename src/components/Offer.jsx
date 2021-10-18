@@ -10,7 +10,6 @@ const Wrapper = styled.div`
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: contain; /* Resize the background image to cover the entire container */
-    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -23,9 +22,19 @@ const Wrapper = styled.div`
         }
         
     }
+    @media (max-width:768px){
+        .offer-title {
+            padding: 20vw 5vw 5vw 5vw;
+            h2 {
+                font-size: 2rem;
+            }
+            
+        }
+    }
     
 `
 const Container = styled.div`
+    width: 70%;
     display: flex;
     align-items: flex-start;
     position: relative;
@@ -61,6 +70,46 @@ const Container = styled.div`
     .container-info {
         width: 40%;
     }
+    @media (max-width:768px){
+        box-shadow: none;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 5vw;
+        border-bottom: 1px solid #000;
+        border-radius:0 ;
+    p {
+        font-size: 1.5rem;
+        padding-bottom: 2vw 0;
+    }
+    h5 {
+        position: static;
+        font-size: 2rem;
+        font-weight: 200;
+        span {
+            font-weight: 900;
+        }
+    }
+    button {
+        margin-top: 10vw;
+        width: 60vw;
+        height: 14vw;
+        padding:2vw;
+    }
+    .container-img {
+        width: 100%;
+        img {
+           width: 100%;
+        }
+        
+    }
+    .container-info {
+        padding: 10vw 0;
+        width: 100%;
+    }
+    }
 `
 
 const Offer = () => {
@@ -70,14 +119,13 @@ const Offer = () => {
                 <h2>pre-built themes with customisation</h2>
             </div>
             <Container>
-                
                 <div className="container-img">
                     <img src={offer1} alt="" />
                 </div>
                 <div className="container-info">
                     <p>Customisation of the theme of your choice can be a good solution for a start. Simply find what you like and let us do the rest.</p>
                     <a href="#services">
-                        <button className="btn-empty">services</button>
+                        <button className="btn-empty">choose your theme</button>
                     </a>
                 </div>
                 <h5>from <span>250£</span></h5>
@@ -92,7 +140,7 @@ const Offer = () => {
                 <div className="container-info">
                     <p>Customisation of the theme of your choice can be a good solution for a start. Simply find what you like and let us do the rest.</p>
                     <a href="#services">
-                        <button className="btn-empty">services</button>
+                        <button className="btn-empty">contact</button>
                     </a>
                 </div>
                 <h5>from <span>250£</span></h5>

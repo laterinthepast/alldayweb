@@ -12,13 +12,18 @@ const Wrapper = styled.div`
     background: -webkit-radial-gradient(circle, rgba(81,218,207,1) 0%, rgba(248,218,91,1) 53%, rgba(245,223,129,1) 100%);
     background: radial-gradient(circle, rgba(81,218,207,1) 0%, rgba(248,218,91,1) 53%, rgba(245,223,129,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#51dacf",endColorstr="#f5df81",GradientType=1); */
+    @media (max-width:768px){
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 5vw 2vw;
+    }
 `
 
 const Left = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
     gap:0.3vw;
     width: 50vw;
     padding-left: 10vw;
@@ -33,12 +38,28 @@ const Left = styled.div`
         display: flex;
         gap:2vw;
     }
+    @media (max-width:768px){
+        padding: 5vw;
+        width: 100%;
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            padding: 4vw 0;
+        }
+        p {
+            font-size: 0.9rem;
+        }
+    }
 `
 
 const Right = styled.div`
     width: 50vw;
     img {
         width: 100%;
+    }
+    @media (max-width:768px){
+        width: 100%;
+    
     }
 `
 

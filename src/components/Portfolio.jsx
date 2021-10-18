@@ -7,6 +7,9 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     padding-bottom: 7vw;
     overflow: hidden;
+    @media (max-width:768px){
+        
+    }
    `
 
 const SliderItem = styled.div`
@@ -38,6 +41,33 @@ const SliderItem = styled.div`
             padding: 2vw 0;
         }
     }
+    @media (max-width:768px){
+        flex-direction: column;
+        width: 100%;
+        
+        padding: 5vw;
+        .slider-img {
+            width: 100%;
+            img {
+                width:100%;
+            }
+        }
+        .slider-info {
+            padding: 5vw;
+            width: 100%;
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                line-height: 1rem;
+                padding-bottom: 9vw;
+            }
+            button {
+                width: 40vw;
+                height: 12vw;
+            }
+        }
+    }
 `
 
 
@@ -64,7 +94,7 @@ const Portfolio = () => {
                         <h1>na ha ku</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                         <a href="#contact">
-                            <button className="btn-empty">contact</button>
+                            <button className="btn-empty">visit site</button>
                         </a>
                     </div>
                 </SliderItem>
@@ -77,7 +107,7 @@ const Portfolio = () => {
                         <h1>na ha ku</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                         <a href="#contact">
-                            <button className="btn-empty">contact</button>
+                            <button className="btn-empty">visit site</button>
                         </a>
                     </div>
                 </SliderItem>
@@ -90,7 +120,7 @@ const Portfolio = () => {
                         <h1>na ha ku</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                         <a href="#contact">
-                            <button className="btn-empty">contact</button>
+                            <button className="btn-empty">visit site</button>
                         </a>
                     </div>
                 </SliderItem>
@@ -103,7 +133,7 @@ const Portfolio = () => {
                         <h1>na ha ku</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                         <a href="#contact">
-                            <button className="btn-empty">contact</button>
+                            <button className="btn-empty">visit site</button>
                         </a>
                     </div>
                 </SliderItem>

@@ -16,6 +16,9 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     padding-top: 10vw;
+    @media (max-width:768px){
+        padding: 0;
+    }
 `
 const Container = styled.div`
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -27,20 +30,37 @@ const Container = styled.div`
     text-align: center;
     padding: 1.6vw;
     margin: 2vw;
-    height: 25vw;
-    width: 25vw;
+    height: 15vw;
+    width: 15vw;
     h2 {
         font-weight: 900;
     }
     img {
         padding: 1vw;
-        width: 70%;
+        width: 60%;
+    }
+    @media (max-width:768px){
+        padding: 0;
+        height: auto;
+        font-size: 1rem;
+        height: 70vw;
+        width: 70vw;
+        img {
+            width: 60%;
+        }
     }
 `
 const Row = styled.div`
     display: flex;
     justify-content: center;
-    
+
+    @media (max-width:768px){
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 `
 const RowS = styled.div`
     display: flex;
@@ -49,7 +69,6 @@ const RowS = styled.div`
     align-items: center;
     padding: 10vw 0;
     position: relative;
-    
     h1 {
         font-size: 4rem;
         font-weight: 900;
@@ -58,15 +77,11 @@ const RowS = styled.div`
     }
     ul {
         list-style: none;
-        width: 40vw;
+        width: 30vw;
         height: auto;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border-radius: 30px;
         padding: 3vw;
-        background: rgb(255,255,255);
-        background: linear-gradient(0deg, rgba(81,218,207,1)0%, rgba(255,255,255,1)  100%);
-        
-        
         text-align: center;
         li {
             font-weight: 200;
@@ -80,6 +95,39 @@ const RowS = styled.div`
         width: 17vw;
         height: 5vw;
         font-size: 2rem;
+    }
+    @media (max-width:768px){
+        
+        padding: 15vw 0;
+        height: 80vh;
+        
+        h1 {
+            position: static;
+            font-size: 2rem;
+            text-align: center;
+        }
+        ul {
+            padding: 10vw 2vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 70vw;
+            height: 100%;
+            box-shadow: none;
+            
+            li {
+                font-size: 1.3rem;
+                font-weight: 500;
+                border-bottom: none;
+                line-height: 1.2rem;
+            }
+        }
+        button {
+        width: 50vw;
+        height: 15vw;
+        font-size: 2rem;
+    }
     }
     
 `
@@ -113,7 +161,7 @@ const Services = () => {
                     <li>regular updates</li>
                     <li>site backup</li>
                     <li>monthly traffic reports</li>
-                    <li>SEO reports</li>
+                    <li>SEO reports</li> <br/>
                     <button className="btn-empty">contact</button>
                 </ul>
                 

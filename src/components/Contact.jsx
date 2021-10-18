@@ -47,6 +47,38 @@ const Container = styled.div`
     }
     
   }
+  @media (max-width:768px){
+    width: 100%;
+    height: auto;
+    margin: 5vw;
+    padding: 5vw 1vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+    h1 {
+      padding-bottom: 7vw;
+      font-size: 2.6rem;
+      font-weight: 900;
+    }
+    .input-values {
+      input{
+        width: 70vw;
+        height: 10vw;
+      }
+    }
+    .input-message {
+      textarea {
+        padding: 1vw;
+        width: 80vw;
+        height: 40vw;
+        text-align: center;
+      }
+      
+      .submit {
+        margin-top: 10vw;
+        padding: 2vw;
+      }
+    }
+  }
 `
 
 const Contact = () => {

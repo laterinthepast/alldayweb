@@ -13,6 +13,10 @@ const Wrapper = styled.div`
     h3 {
         font-size: 1.5rem;
     }
+    @media (max-width:768px){
+        flex-direction: column;
+        padding: 25vw 5vw;
+    }
 `
 
 
