@@ -73,17 +73,17 @@ const NavItems = [
     },
     {
         name: 'services',
-        href: '#about',
+        href: '#services',
         id: 2
     },
     {
         name: 'work',
-        href: '#about',
+        href: '#work',
         id: 3
     },
     {
         name: 'contact',
-        href: '#about',
+        href: '#contact',
         id: 4
     }
 ]
