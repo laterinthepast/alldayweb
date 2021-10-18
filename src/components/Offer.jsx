@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import offer1 from '../images/offer1.png'
 import offer2 from '../images/offer2.png'
@@ -123,9 +124,11 @@ const Offer = () => {
                 </div>
                 <div className="container-info">
                     <p>Customisation of the theme of your choice can be a good solution for a start. Simply find what you like and let us do the rest.</p>
-                    <a href="themes">
-                        <button className="btn-empty">choose your theme</button>
-                    </a>
+                    <Link to="/themes">
+                        
+                            <button className="btn-empty">choose your theme</button>
+                        
+                    </Link>
                 </div>
                 <h5>from <span>250£</span></h5>
             </Container>
