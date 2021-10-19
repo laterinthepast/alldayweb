@@ -62,8 +62,9 @@ const NavItem = styled.div`
         font-size: 1.1vw;
         font-weight: 300;
         transition: all 0.12s ease-in-out;
-        border-right: 2px solid #000;
-        margin-right: 1vw;
+        border-right: 1px solid #000;
+        border-left: 1px solid transparent;
+        
         color: #000;
         :hover {
             background-color: #A0DFDD;
