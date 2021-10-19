@@ -77,7 +77,7 @@ const RowS = styled.div`
     h1 {
         font-size: 2rem;
         font-weight: 900;
-        transform: ;
+       
         position: absolute;
         top: 50%;
         left: 50%;
