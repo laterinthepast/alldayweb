@@ -19,16 +19,16 @@ const Wrapper = styled.div`
 const MainPage = () => {
     return (
         <Wrapper>
-            <Navbar/>
-            <Hero/>
-            <About/>
-            <Portfolio/>
-            <Services/>
-            
-            <Offer/>
-            
-            <Contact/>
-            <Footer/>
+            <Navbar />
+            <Hero />
+            <About />
+            <Portfolio />
+
+
+            <Offer />
+            <Services />
+            <Contact />
+            <Footer />
         </Wrapper>
     )
 }
