@@ -26,7 +26,7 @@ const Wrapper = styled.div`
         h2{
             font-size: 3vw;
             font-weight: 400; 
-            font-family: 'Courier Prime', monospace;
+            
             text-align: center;
         }  
     }

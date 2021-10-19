@@ -37,6 +37,7 @@ const SliderItem = styled.div`
         h1 {
             font-size: 3rem;
             font-weight: 800;
+            font-family: 'Courier Prime', monospace;
         }
         p {
             font-size: 1.3rem;

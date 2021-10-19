@@ -30,6 +30,7 @@ const Left = styled.div`
     h1 {
         font-size: 4vw;
         font-weight: 200;
+        
     }
     p {
         padding-bottom: 5vw;
