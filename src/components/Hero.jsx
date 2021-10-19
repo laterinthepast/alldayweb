@@ -50,6 +50,7 @@ const Left = styled.div`
         p {
             font-size: 0.9rem;
         }
+        
     }
 `
 

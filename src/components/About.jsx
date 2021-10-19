@@ -10,15 +10,23 @@ const Wrapper = styled.div`
     padding: 10vw 18vw;
     
     h3 {
-        font-size: 1.2vw;
+        font-size: 1.8vw;
         line-height: 2.5vw;
+        text-align: justify;
     }
     img {
         width: 20vw;
     }
     @media (max-width:768px){
         flex-direction: column;
-        padding: 25vw 5vw;
+        padding: 25vw 10vw;
+        h3 {
+            font-size: 5vw;
+            line-height: 6vw;
+        }
+        img {
+            width: 40vw;
+        }
     }
 `
 

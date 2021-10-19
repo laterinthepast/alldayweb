@@ -41,7 +41,6 @@ button {
   button {
     width: 30vw;
     height: 10vw;
-    font-size: 1.1rem;
   }
 }
 
@@ -57,6 +56,12 @@ button {
   background: #f3ecc2;
 }
 
+@media (max-width: 768px) {
+  .btn-background {
+    font-size: 3vw;
+  }
+}
+
 .btn-empty {
   font-weight: 500;
   border: 2px solid #000;
@@ -68,4 +73,10 @@ button {
 .btn-empty:hover {
   background: #51DACF;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .btn-empty {
+    font-size: 3vw;
+  }
 }

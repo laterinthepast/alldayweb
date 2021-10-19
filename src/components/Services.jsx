@@ -130,35 +130,40 @@ const RowS = styled.div`
         font-size: 2vw;
     }
     @media (max-width:768px){
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 15vw 0;
-        height: 80vh;
-        
+        height: auto;
+        position: relative;
         h1 {
-            position: static;
-            font-size: 2rem;
-            text-align: center;
+            position: absolute;
+            font-size: 7vw;
+            top: 50%;
+            left: 5vw;
+
         }
         ul {
             padding: 10vw 2vw;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             width: 70vw;
-            height: 100%;
             box-shadow: none;
+
             li {
-                font-size: 1.3rem;
+                font-size: 5vw;
                 font-weight: 500;
                 border-bottom: none;
-                line-height: 1.2rem;
+                line-height: 12vw;
             }
         }
         button {
         width: 50vw;
         height: 15vw;
-        font-size: 2rem;
+        font-size: 5.5vw;
     }
     }
     

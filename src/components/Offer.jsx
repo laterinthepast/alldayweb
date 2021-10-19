@@ -31,10 +31,13 @@ const Wrapper = styled.div`
         }  
     }
     @media (max-width:768px){
+        gap: 20vw;
         .offer-title {
             padding: 20vw 5vw 5vw 5vw;
             h2 {
                 font-size: 2rem;
+                color: #000;
+                background: rgba(0,0,0, .1);
             }
             
         }
@@ -71,7 +74,6 @@ const Container = styled.div`
     }
     .container-img {
         width: 60%;
-        
         img {
            width: 100%;
            
@@ -88,11 +90,13 @@ const Container = styled.div`
         justify-content: center;
         align-items: center;
         margin: 0;
-        padding: 5vw;
-        
+        padding: 0;
         border-radius:0 ;
+    h2 {
+        font-size: 5vw;
+    }
     p {
-        font-size: 1.5rem;
+        font-size: 5vw;
         padding-bottom: 2vw 0;
     }
     h5 {
@@ -104,10 +108,11 @@ const Container = styled.div`
         }
     }
     button {
-        margin-top: 10vw;
+        margin-top: 8vw;
         width: 60vw;
         height: 14vw;
-        padding:2vw;
+        padding:0;
+        font-size: 4.5vw;
     }
     .container-img {
         width: 100%;
@@ -117,7 +122,7 @@ const Container = styled.div`
         
     }
     .container-info {
-        padding: 10vw 0;
+        padding: 5vw 0;
         width: 100%;
     }
     }

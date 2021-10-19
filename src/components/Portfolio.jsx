@@ -40,14 +40,19 @@ const SliderItem = styled.div`
         }
         p {
             font-size: 1.3rem;
-            line-height: 1.8vw;
+            text-align: justify;
             padding: 2vw 0;
+            font-family: 'Courier Prime', monospace;
         }
+        button {
+                width: 16vw;
+                height: 4vw;
+                font-size: 1.5vw;
+            }
     }
     @media (max-width:768px){
         flex-direction: column;
         width: 100%;
-        
         padding: 5vw;
         .slider-img {
             width: 100%;
@@ -60,14 +65,16 @@ const SliderItem = styled.div`
             width: 100%;
             h1 {
                 font-size: 2rem;
+                color: #FCCC00;
             }
             p {
-                line-height: 1.2rem;
+                
                 padding-bottom: 9vw;
             }
             button {
                 width: 40vw;
                 height: 12vw;
+                font-size: 5vw;
             }
         }
     }

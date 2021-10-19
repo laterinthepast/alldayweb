@@ -105,10 +105,14 @@ const Container = styled.div`
       }
       
       .submit {
-        margin-top: 10vw;
-        padding: 2vw;
-        width: 40vw;
-        height: 10vw;
+        input {
+         width: 40vw;
+        height: 10vw; 
+        font-size: 5vw;
+        }
+        margin-top: 5vw;
+        padding: 0;
+        
       }
     }
   }
