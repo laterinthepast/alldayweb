@@ -7,11 +7,14 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     gap: 5vw;
-    padding: 10vw;
-    background: rgb(75,202,198);
-    background: linear-gradient(0deg, rgba(75,202,198,1) 0%, rgba(255,255,255,1) 100%);
+    padding: 10vw 18vw;
+    
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.2vw;
+        line-height: 2.5vw;
+    }
+    img {
+        width: 20vw;
     }
     @media (max-width:768px){
         flex-direction: column;

@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     display: flex;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(81,218,207,1) 100%);
-    padding: 1vw;
+    padding: 3vw 5vw 5vw;
     /* background: -moz-radial-gradient(circle, rgba(81,218,207,1) 0%, rgba(248,218,91,1) 53%, rgba(245,223,129,1) 100%);
     background: -webkit-radial-gradient(circle, rgba(81,218,207,1) 0%, rgba(248,218,91,1) 53%, rgba(245,223,129,1) 100%);
     background: radial-gradient(circle, rgba(81,218,207,1) 0%, rgba(248,218,91,1) 53%, rgba(245,223,129,1) 100%);
@@ -25,14 +25,15 @@ const Left = styled.div`
     flex-direction: column;
     justify-content: center;
     gap:0.3vw;
-    width: 50vw;
+    width: 60vw;
     padding-left: 10vw;
     h1 {
         font-size: 4vw;
-        font-weight: 600;
+        font-weight: 200;
     }
     p {
         padding-bottom: 5vw;
+        font-family: 'Courier Prime', monospace;
     }
     .buttons {
         display: flex;

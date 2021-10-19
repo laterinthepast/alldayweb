@@ -21,10 +21,12 @@ const MainPage = () => {
         <Wrapper>
             <Navbar/>
             <Hero/>
-            <Services/>
-            <Portfolio/>
-            <Offer/>
             <About/>
+            <Portfolio/>
+            <Services/>
+            
+            <Offer/>
+            
             <Contact/>
             <Footer/>
         </Wrapper>

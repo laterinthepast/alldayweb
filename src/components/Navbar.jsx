@@ -31,12 +31,14 @@ const WrapperDesk = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw;
-    background: rgba(81,218,207,1);    
+    padding: 3vw 2vw 2vw 2vw;
+    background: rgba(81,218,207,1); 
+    position: relative;
     .nav-logo {
         img {
             position: absolute;
-            width: 5vw;
+            top: 2vw;
+            width: 6vw;
         }
     }
 `
@@ -47,27 +49,33 @@ const NavList = styled.div`
 `
 const NavItem = styled.div`
     .nav-link {
-        width: 10vw;
+        width: 8vw;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 2vw;
     }
     a {
+        font-family: 'Courier Prime', monospace;
         color: #000;
         text-decoration: none;
-        font-size: 1.5vw;
-        font-weight: 800;
-        transition: all 0.1s ease-in-out;
+        font-size: 1.1vw;
+        font-weight: 300;
+        transition: all 0.12s ease-in-out;
+        border-right: 2px solid #000;
+        margin-right: 1vw;
+        color: #000;
         :hover {
             background-color: #A0DFDD;
             color: #070707;
+            border: 1px solid #000;
+            
         }
     }
 `
 const NavItems = [
     {
-        name: 'about us',
+        name: 'about',
         href: '#about',
         id: 1
     },

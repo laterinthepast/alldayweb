@@ -7,19 +7,27 @@ import offerb from '../images/offerb.png'
 
 const Wrapper = styled.div`
     background-image: url(${offerb}); /* The image used */
-    height: auto;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: contain; /* Resize the background image to cover the entire container */
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 10vw;
+    gap: 10vw;
+    .container-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .offer-title {
         h2{
-            font-size: 3rem;
-            font-weight: 800;  
+            font-size: 3vw;
+            font-weight: 400; 
+            font-family: 'Courier Prime', monospace;
+            text-align: center;
         }  
     }
     @media (max-width:768px){
@@ -34,26 +42,27 @@ const Wrapper = styled.div`
     
 `
 const Container = styled.div`
-    width: 70%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    gap: 4vw;
     position: relative;
-    margin: 1vw 6vw 5vw 6vw;
-    padding: 5vw;
+    margin: 1vw 2vw 1vw 2vw;
+    padding: 5vw 3vw;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    border-radius: 30px;
+    border-radius: 10px;
     p {
-        font-size: 1.7rem;
+        font-size: 1.5vw;
         padding-bottom: 5vw;
+        text-align: justify;
     }
     h5 {
         position: absolute;
         bottom: 1vw;
         right: 1vw;
-        font-size: 2.5rem;
+        font-size: 2.5vw;
         font-weight: 200;
         span {
-            font-weight: 900;
+            font-weight: 800;
         }
     }
     button {
@@ -62,8 +71,10 @@ const Container = styled.div`
     }
     .container-img {
         width: 60%;
+        
         img {
            width: 100%;
+           
         }
         
     }
@@ -115,6 +126,7 @@ const Container = styled.div`
 const Offer = () => {
     return (
         <Wrapper>
+            <div className="container-wrapper">
             <div className="offer-title" id="offer">
                 <h2>pre-built themes with customisation</h2>
             </div>
@@ -125,13 +137,13 @@ const Offer = () => {
                 <div className="container-info">
                     <p>Customisation of the theme of your choice can be a good solution for a start. Simply find what you like and let us do the rest.</p>
                     <Link to="/themes">
-                        
-                            <button className="btn-empty">choose your theme</button>
-                        
+                        <button className="btn-empty">choose your theme</button>
                     </Link>
                 </div>
                 <h5>from <span>250£</span></h5>
             </Container>
+            </div>
+            <div className="container-wrapper">
             <div className="offer-title">
                 <h2>designed and built from scratch</h2>
             </div>
@@ -147,6 +159,7 @@ const Offer = () => {
                 </div>
                 <h5>from <span>500£</span></h5>
             </Container>
+            </div>
         </Wrapper>
     )
 }

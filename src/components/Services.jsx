@@ -15,7 +15,7 @@ const Wrapper = styled.div`
     background-size: contain; /* Resize the background image to cover the entire container */
     display: flex;
     flex-direction: column;
-    padding-top: 10vw;
+    padding-top: 1vw;
     @media (max-width:768px){
         padding: 0;
     }
@@ -30,15 +30,18 @@ const Container = styled.div`
     text-align: center;
     padding: 1.6vw;
     margin: 2vw;
-    height: 15vw;
-    width: 15vw;
+    width: 20vw;
+    height: 20vw;
     h2 {
-        font-weight: 900;
+        font-weight: 400;
         font-size: 1.2rem;
+        font-family: 'Courier Prime', monospace;
     }
     img {
         padding: 1vw;
-        width: 70%;
+        max-width:70%;
+        max-height: 70%;
+        object-fit: contain;
     }
     @media (max-width:768px){
         padding: 0;
@@ -64,38 +67,67 @@ const Row = styled.div`
     }
 `
 const RowS = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: 36vw 36vw;
+    grid-template-rows: 1fr;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 10vw 0;
+    padding: 10vw;
     position: relative;
+    height: auto;
     h1 {
-        font-size: 4rem;
+        font-size: 2rem;
         font-weight: 900;
+        transform: ;
         position: absolute;
-        top: 7vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        
+    }
+    .first-list {
+        text-align: right;
+        li {
+            border-right: 2px solid #000;
+            border-left: 1px solid transparent;
+            transition: all 0.16s ease-in-out;
+            &:hover {
+                border-right: 2px solid transparent;
+                border-left: 1px solid #FCCC00;
+                background-color: rgba(255,255,255, .9);
+            }
+        }
+    }
+    .second-list {
+        li {
+            border-left: 1px solid #000;
+            border-right: 1px solid transparent;
+            transition: all 0.12s ease-in-out;
+            &:hover {
+                border-right: 1px solid #51DACF;
+                border-left: 1px solid transparent;
+                background-color: rgba(255,255,255, .9);
+            }
+        }
     }
     ul {
         list-style: none;
-        width: 30vw;
+        width: 36vw;
         height: auto;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         border-radius: 30px;
         padding: 3vw;
-        text-align: center;
+        
         li {
-            font-weight: 200;
-            font-size: 2rem;
-            line-height: 4vw;
-            border-bottom: 1px solid #000;
+            
+            font-size: 1.8vw;
+            line-height: 5vw;
             padding: 1vw;
+            font-family: 'Courier Prime', monospace;
         }
     }
     button {
         width: 17vw;
-        height: 5vw;
-        font-size: 2rem;
+        height: 4vw;
+        font-size: 2vw;
     }
     @media (max-width:768px){
         
@@ -116,7 +148,6 @@ const RowS = styled.div`
             width: 70vw;
             height: 100%;
             box-shadow: none;
-            
             li {
                 font-size: 1.3rem;
                 font-weight: 500;
@@ -136,38 +167,48 @@ const RowS = styled.div`
 const Services = () => {
     return (
         <Wrapper id="services">
-            <Row>
-                <Container>
-                    <h2>custom design</h2>
-                    <img src={services1} alt="" />
-                </Container>
-                <Container>
-                    <h2>personalised functionality</h2>
-                    <img src={services2} alt="" />
-                </Container>
-            </Row>
-            <Row>
-                <Container>
-                    <h2>free hosting</h2>
-                    <img src={services3} alt="" />
-                </Container>
-                <Container>
-                    <h2>why we don't use wordpress</h2>
-                    <img src={services4} alt="" />
-                </Container>
-            </Row>
+            <div>
+                <Row>
+                    <Container>
+                        <h2>custom design</h2>
+                        <img src={services1} alt="" />
+                    </Container>
+                    <Container>
+                        <h2>personalised functionality</h2>
+                        <img src={services2} alt="" />
+                    </Container>
+                </Row>
+                <Row>
+                    <Container>
+                        <h2>free hosting</h2>
+                        <img src={services3} alt="" />
+                    </Container>
+                    <Container>
+                        <h2>why we don't use wordpress</h2>
+                        <img src={services4} alt="" />
+                    </Container>
+                </Row>
+            </div>
             <RowS>
                 <h1>website maintenance</h1>
-                <ul>
+                <ul className="first-list">
                     <li>regular updates</li>
                     <li>site backup</li>
                     <li>monthly traffic reports</li>
                     <li>SEO reports</li> <br />
                     <a href="#contact">
-                        <button className="btn-empty">contact</button>
+                        <button className="btn-background">contact</button>
                     </a>
                 </ul>
-
+                <ul className="second-list">
+                    <li>quick turnaround</li>
+                    <li>files stored on GitHub</li>
+                    <li>site monitoring</li>
+                    <li>easy contact</li> <br />
+                    <a href="#contact">
+                        <button className="btn-empty">portfolio</button>
+                    </a>
+                </ul>
             </RowS>
         </Wrapper>
     )

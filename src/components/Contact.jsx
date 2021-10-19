@@ -2,12 +2,11 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  background: rgb(26,50,121);
-  background: linear-gradient(0deg, rgba(26,50,121,1) 0%, rgba(75,202,198,1) 100%);
+  
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  padding-bottom: 10vw;
   
 `
 const Container = styled.div`
@@ -19,7 +18,9 @@ const Container = styled.div`
   height: auto;
   padding: 3vw;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #4BCAC6;
   border-radius: 30px;
+  
   h1 {
     padding-bottom: 3vw;
     font-size: 2.2rem;
@@ -27,10 +28,15 @@ const Container = styled.div`
   }
   .input-values {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     input{
       width: 25vw;
       height: 4vw;
       text-align: center;
+      border: none;
     }
   }
   .input-message {
@@ -39,16 +45,39 @@ const Container = styled.div`
       width: 35vw;
       height: 10vw;
       text-align: center;
+      border:none;
     }
+    
     
     .submit {
-      width: 15vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      input {
+        width: 15vw;
       height: 5vw;
+      border-radius: 10px;
+      border: none;
+      background: #FCCC00;
+      cursor: pointer;
+      font-size: 1.2vw;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background: #fff;
+      }
+      &:active {
+        background: #77D970;
+      }
+      }
+      
       margin-top: 2vw;
-      padding: 2vw;
-    }
+      
     
   }
+    
+  }
+  
   @media (max-width:768px){
     width: 100%;
     height: auto;
@@ -109,8 +138,8 @@ const Contact = () => {
               <br />
               <textarea id="message" name="message" placeholder="your message" required></textarea>
             </p>
-            <p>
-              <input className="submit" type="submit" value="Submit message" />
+            <p className="submit">
+              <input type="submit" value="Submit" />
             </p>
           </div>
         </form>

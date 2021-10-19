@@ -8,16 +8,19 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     gap: 10vw;
-    padding: 5vw;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(26,50,121,1) 100%);
-    
+    padding: 2vw;
+    background: rgb(119,217,112);
+    background: linear-gradient(0deg, rgba(119,217,112,1) 0%, rgba(255,255,255,1) 100%);
+    position: relative;
     h1 {
-        font-size: 1rem;
-        color: #fff;
+        font-size: 1vw;
+        color: #000;
         font-weight: 500;
     }
     img {
+        position: absolute;
+        left: 2vw;
+        bottom: 2vw;
         width: 10%;
     }
     
@@ -38,9 +41,9 @@ const Wrapper = styled.div`
 const Footer = () => {
     return (
         <Wrapper>
-            <img src={logo} alt=""/>
-            
-            <h1>&copy; all rights reserved 2021 alldayweb</h1>
+            <img src={logo} alt="" />
+
+            <h1>&copy; all rights reserved 2021</h1>
         </Wrapper>
     )
 }
