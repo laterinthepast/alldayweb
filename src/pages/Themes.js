@@ -9,6 +9,16 @@ import web7 from '../images/themes/mockup7.png'
 import web8 from '../images/themes/mockup8.png'
 import web9 from '../images/themes/mockup9.png'
 import web11 from '../images/themes/mockup11.png'
+import web13 from '../images/themes/mockup13.png'
+import web15 from '../images/themes/mockup15.png'
+import web16 from '../images/themes/mockup16.png'
+import web17 from '../images/themes/mockup17.png'
+import web18 from '../images/themes/mockup18.png'
+import web19 from '../images/themes/mockup19.png'
+import web20 from '../images/themes/mockup20.png'
+import web21 from '../images/themes/mockup21.png'
+import web23 from '../images/themes/mockup23.png'
+import web24 from '../images/themes/mockup24.png'
 
 const Wrapper = styled.div`
     background: rgb(0,0,0);
@@ -93,6 +103,57 @@ const images = [
         id: 9,
         src: web11,
         href: "https://mockup-11v1.netlify.app/"
+    }
+    ,
+    {
+        id: 10,
+        src: web13,
+        href: "https://mockup13v1.netlify.app/"
+    },
+    {
+        id: 11,
+        src: web15,
+        href: "https://mockup15v1.netlify.app/"
+    },
+    {
+        id: 12,
+        src: web16,
+        href: "https://mockup16v1.netlify.app/"
+    },
+    {
+        id: 13,
+        src: web17,
+        href: "https://mockup17v1.netlify.app/"
+    },
+    {
+        id: 14,
+        src: web18,
+        href: "https://mockup18v1.netlify.app/"
+    },
+    {
+        id: 15,
+        src: web19,
+        href: "https://mockup19v1.netlify.app/"
+    },
+    {
+        id: 16,
+        src: web20,
+        href: "https://mockup20v1.netlify.app/"
+    },
+    {
+        id: 17,
+        src: web21,
+        href: "https://mockup21v1.netlify.app/"
+    },
+    {
+        id: 18,
+        src: web23,
+        href: "https://mockup23v1.netlify.app/"
+    },
+    {
+        id: 19,
+        src: web24,
+        href: "https://mockup24v1.netlify.app/"
     }
 
 ]
