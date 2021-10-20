@@ -45,7 +45,7 @@ const Container = styled.div`
         
     }
     @media (max-width:768px){
-        padding: 1vw;
+        padding: 2vw;
         height: auto;
         font-size: 1rem;
         height: 70vw;
