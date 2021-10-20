@@ -45,7 +45,7 @@ const Container = styled.div`
         
     }
     @media (max-width:768px){
-        padding: 0;
+        padding: 1vw 2vw;
         height: auto;
         font-size: 1rem;
         height: 70vw;
@@ -143,7 +143,7 @@ const RowS = styled.div`
             font-size: 7vw;
             top: 50%;
             left: 5vw;
-
+            
         }
         ul {
             padding: 10vw 2vw;
