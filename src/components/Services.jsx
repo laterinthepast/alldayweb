@@ -181,7 +181,7 @@ const Services = () => {
                             <img src={services1} alt="" />
                         </Container>
                     </Slide>
-                    <Slide right>
+                    <Slide left>
                         <Container>
                             <h2>personalised functionality</h2>
                             <img src={services2} alt="" />

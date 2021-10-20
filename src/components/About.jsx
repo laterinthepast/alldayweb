@@ -42,7 +42,7 @@ const About = () => {
             <Slide left >
                 <img src={logo} alt="" />
             </Slide>
-            <Slide right>
+            <Slide left>
                 <h3>We are a newly established web development agency based in UK. Simple and specious designs and quick builds this is what we do.
                     Contact us for any queries and do not hesitate to ask questions.
                     All our quotes are free so there is no harm in getting information. </h3>
