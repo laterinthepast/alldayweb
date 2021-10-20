@@ -37,8 +37,7 @@ const Wrapper = styled.div`
 
 
 const About = () => {
-
-  
+    
 
     return (
         
