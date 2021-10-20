@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import Bounce from 'react-reveal/Bounce';
+
 
 const Wrapper = styled.div`
   
@@ -123,7 +123,7 @@ const Contact = () => {
 
 
   return (
-    <Bounce bottom>
+    
       <Wrapper id="contact">
 
         <Container>
@@ -152,7 +152,7 @@ const Contact = () => {
         </Container>
 
       </Wrapper>
-    </Bounce>
+    
   )
 }
 

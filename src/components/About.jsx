@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import logo from '../images/logo.png'
-import Slide from 'react-reveal/Slide';
+
 
 
 const Wrapper = styled.div`
@@ -37,17 +37,19 @@ const Wrapper = styled.div`
 
 
 const About = () => {
+
+  
+
     return (
-        <Wrapper id="about">
-            <Slide left >
-                <img src={logo} alt="" />
-            </Slide>
-            <Slide left>
-                <h3>We are a newly established web development agency based in UK. Simple and specious designs and quick builds this is what we do.
-                    Contact us for any queries and do not hesitate to ask questions.
-                    All our quotes are free so there is no harm in getting information. </h3>
-            </Slide>
-        </Wrapper>
+        
+                    <Wrapper id="about">
+                        <img src={logo} alt="" />
+                        <h3>We are a newly established web development agency based in UK. Simple and specious designs and quick builds this is what we do.
+                            Contact us for any queries and do not hesitate to ask questions.
+                            All our quotes are free so there is no harm in getting information. </h3>
+
+                    </Wrapper>
+                
     )
 }
 

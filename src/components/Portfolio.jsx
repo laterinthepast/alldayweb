@@ -21,7 +21,7 @@ const SliderItem = styled.div`
     justify-content: space-between;
     align-items: center;
     height: auto;
-    height: 50vh;
+    
     .slider-img { 
         display: flex;
         justify-content: center;

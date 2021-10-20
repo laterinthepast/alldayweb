@@ -5,7 +5,7 @@ import services1 from '../images/services1.png'
 import services2 from '../images/services2.png'
 import services3 from '../images/services3.png'
 import services4 from '../images/services4.png'
-import Slide from 'react-reveal/Slide';
+
 
 const Wrapper = styled.div`
     background-image: url(${backImg}); /* The image used */
@@ -45,7 +45,7 @@ const Container = styled.div`
         
     }
     @media (max-width:768px){
-        padding: 1vw 2vw;
+        padding: 1vw;
         height: auto;
         font-size: 1rem;
         height: 70vw;
@@ -175,32 +175,24 @@ const Services = () => {
         <Wrapper id="services">
             <div>
                 <Row>
-                    <Slide top>
-                        <Container>
-                            <h2>we offer custom designs</h2>
-                            <img src={services1} alt="" />
-                        </Container>
-                    </Slide>
-                    <Slide left>
-                        <Container>
-                            <h2>personalised functionality</h2>
-                            <img src={services2} alt="" />
-                        </Container>
-                    </Slide>
+                    <Container>
+                        <h2>we offer custom designs</h2>
+                        <img src={services1} alt="" />
+                    </Container>
+                    <Container>
+                        <h2>personalised functionality</h2>
+                        <img src={services2} alt="" />
+                    </Container>
                 </Row>
                 <Row>
-                    <Slide left>
-                        <Container>
-                            <h2>advice on free hosting platforms</h2>
-                            <img src={services3} alt="" />
-                        </Container>
-                    </Slide>
-                    <Slide bottom>
-                        <Container>
-                            <h2>no monthly payments no wordpress</h2>
-                            <img src={services4} alt="" />
-                        </Container>
-                    </Slide>
+                    <Container>
+                        <h2>advice on free hosting platforms</h2>
+                        <img src={services3} alt="" />
+                    </Container>
+                    <Container>
+                        <h2>no monthly payments no wordpress</h2>
+                        <img src={services4} alt="" />
+                    </Container>
                 </Row>
             </div>
             <RowS>
