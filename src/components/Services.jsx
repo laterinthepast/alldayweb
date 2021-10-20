@@ -5,7 +5,7 @@ import services1 from '../images/services1.png'
 import services2 from '../images/services2.png'
 import services3 from '../images/services3.png'
 import services4 from '../images/services4.png'
-
+import Slide from 'react-reveal/Slide';
 
 const Wrapper = styled.div`
     background-image: url(${backImg}); /* The image used */
@@ -39,9 +39,10 @@ const Container = styled.div`
     }
     img {
         padding: 1vw;
-        max-width:70%;
-        max-height: 70%;
+        max-width:80%;
+        max-height: 80%;
         object-fit: contain;
+        
     }
     @media (max-width:768px){
         padding: 0;
@@ -174,24 +175,32 @@ const Services = () => {
         <Wrapper id="services">
             <div>
                 <Row>
-                    <Container>
-                        <h2>custom design</h2>
-                        <img src={services1} alt="" />
-                    </Container>
-                    <Container>
-                        <h2>personalised functionality</h2>
-                        <img src={services2} alt="" />
-                    </Container>
+                    <Slide top>
+                        <Container>
+                            <h2>we offer custom designs</h2>
+                            <img src={services1} alt="" />
+                        </Container>
+                    </Slide>
+                    <Slide right>
+                        <Container>
+                            <h2>personalised functionality</h2>
+                            <img src={services2} alt="" />
+                        </Container>
+                    </Slide>
                 </Row>
                 <Row>
-                    <Container>
-                        <h2>free hosting</h2>
-                        <img src={services3} alt="" />
-                    </Container>
-                    <Container>
-                        <h2>why we don't use wordpress</h2>
-                        <img src={services4} alt="" />
-                    </Container>
+                    <Slide left>
+                        <Container>
+                            <h2>advice on free hosting platforms</h2>
+                            <img src={services3} alt="" />
+                        </Container>
+                    </Slide>
+                    <Slide bottom>
+                        <Container>
+                            <h2>no monthly payments no wordpress</h2>
+                            <img src={services4} alt="" />
+                        </Container>
+                    </Slide>
                 </Row>
             </div>
             <RowS>
@@ -210,7 +219,7 @@ const Services = () => {
                     <li>files stored on GitHub</li>
                     <li>site monitoring</li>
                     <li>easy contact</li> <br />
-                    <a href="#contact">
+                    <a href="#work">
                         <button className="btn-empty">portfolio</button>
                     </a>
                 </ul>

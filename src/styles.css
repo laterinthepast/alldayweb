@@ -80,3 +80,21 @@ button {
     font-size: 3vw;
   }
 }
+
+/* ANIMATIONS */
+@-webkit-keyframes fadeFromLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeFromLeft {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

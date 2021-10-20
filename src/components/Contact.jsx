@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import Bounce from 'react-reveal/Bounce';
 
 const Wrapper = styled.div`
   
@@ -122,33 +123,36 @@ const Contact = () => {
 
 
   return (
+    <Bounce bottom>
+      <Wrapper id="contact">
 
-    <Wrapper id="contact">
-      <Container>
-        <h1>Contact us</h1>
-        <form name="contact" method="post">
-          <div className="input-values">
-            <input type="hidden" name="form-name" value="contact" />
-            <p>
-              <input type="text" id="name" name="name" placeholder="your name" required />
-            </p>
-            <br />
-            <p>
-              <input type="email" id="email" name="email" placeholder="your email" required />
-            </p>
-          </div>
-          <div className="input-message">
-            <p>
+        <Container>
+          <h1>Contact us</h1>
+          <form name="contact" method="post">
+            <div className="input-values">
+              <input type="hidden" name="form-name" value="contact" />
+              <p>
+                <input type="text" id="name" name="name" placeholder="your name" required />
+              </p>
               <br />
-              <textarea id="message" name="message" placeholder="your message" required></textarea>
-            </p>
-            <p className="submit">
-              <input type="submit" value="Submit" />
-            </p>
-          </div>
-        </form>
-      </Container>
-    </Wrapper>
+              <p>
+                <input type="email" id="email" name="email" placeholder="your email" required />
+              </p>
+            </div>
+            <div className="input-message">
+              <p>
+                <br />
+                <textarea id="message" name="message" placeholder="your message" required></textarea>
+              </p>
+              <p className="submit">
+                <input type="submit" value="Submit" />
+              </p>
+            </div>
+          </form>
+        </Container>
+
+      </Wrapper>
+    </Bounce>
   )
 }
 

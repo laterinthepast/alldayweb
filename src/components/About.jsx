@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 import logo from '../images/logo.png'
+import Slide from 'react-reveal/Slide';
+
 
 const Wrapper = styled.div`
     display: flex;
@@ -13,9 +15,11 @@ const Wrapper = styled.div`
         font-size: 1.8vw;
         line-height: 2.5vw;
         text-align: justify;
+        
     }
     img {
         width: 20vw;
+        animation: fadeFromLeft 1s;
     }
     @media (max-width:768px){
         flex-direction: column;
@@ -35,10 +39,14 @@ const Wrapper = styled.div`
 const About = () => {
     return (
         <Wrapper id="about">
-            <img src={logo} alt="" />
-            <h3>We are a newly established web development agency based in UK. Simple and specious designs and quick builds this is what we do.
-                Contact us for any queries and do not hesitate to ask questions.
-                All our quotes are free so there is no harm in getting information. </h3>
+            <Slide left >
+                <img src={logo} alt="" />
+            </Slide>
+            <Slide right>
+                <h3>We are a newly established web development agency based in UK. Simple and specious designs and quick builds this is what we do.
+                    Contact us for any queries and do not hesitate to ask questions.
+                    All our quotes are free so there is no harm in getting information. </h3>
+            </Slide>
         </Wrapper>
     )
 }

@@ -130,13 +130,13 @@ const Container = styled.div`
 
 const Offer = () => {
     return (
-        <Wrapper>
-            <div className="container-wrapper">
-            <div className="offer-title" id="offer">
+        <Wrapper id="offer">
+            <div className="container-wrapper" >
+            <div className="offer-title" >
                 <h2>pre-built themes with customisation</h2>
             </div>
             <Container>
-                <div className="container-img">
+                <div className="container-img" >
                     <img src={offer1} alt="" />
                 </div>
                 <div className="container-info">

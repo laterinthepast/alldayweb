@@ -10,6 +10,7 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     padding-bottom: 7vw;
     overflow: hidden;
+    
     @media (max-width:768px){
         
     }
@@ -18,8 +19,9 @@ const Wrapper = styled.div`
 const SliderItem = styled.div`
     display: flex !important;
     justify-content: space-between;
+    align-items: center;
     height: auto;
-    
+    height: 50vh;
     .slider-img { 
         display: flex;
         justify-content: center;
@@ -55,6 +57,7 @@ const SliderItem = styled.div`
         flex-direction: column;
         width: 100%;
         padding: 5vw;
+        height: auto;
         .slider-img {
             width: 100%;
             img {

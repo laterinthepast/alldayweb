@@ -114,7 +114,7 @@ const Navbar = () => {
         <div>
             {isMobile ? (
                 <WrapperMobile>
-                    <NavListMobile>
+                    <NavListMobile id="top">
                         <NavItemMobile>
                             <a href="#about" className="mobile-link">
                                 <p>about</p>
@@ -142,7 +142,7 @@ const Navbar = () => {
                     </NavListMobile>
                 </WrapperMobile>
             ) : (
-                <WrapperDesk>
+                <WrapperDesk id="top">
                     <div className="nav-logo">
                         <img src={logo} alt="" />
                     </div>
