@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -37,6 +38,7 @@ const Container = styled.div`
     }
   }
   .input-message {
+    padding-bottom: 2vw;
     textarea {
       padding: 1vw;
       width: 35vw;
@@ -129,6 +131,10 @@ const Contact = () => {
               <input type="submit" value="Submit" />
             </p>
           </div>
+          <p>your details will only be used for communication with us</p>
+          <Link to="/privacy">
+            <span>Privacy Policy</span>
+          </Link>
         </form>
       </Container>
     </Wrapper>

@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 import hero from '../images/hero.png'
+import { Typewriter } from 'react-typewriting-effect'
+import 'react-typewriting-effect/dist/index.css'
+
 
 const Wrapper = styled.div`
     height: auto;
@@ -24,7 +27,7 @@ const Left = styled.div`
         font-size: 4vw;
         font-weight: 200;
     }
-    p {
+    .typewriter {
         padding-bottom: 5vw;
         font-family: 'Courier Prime', monospace;
     }
@@ -40,7 +43,7 @@ const Left = styled.div`
             font-weight: 800;
             padding: 4vw 0;
         }
-        p {
+        .typewriter {
             font-size: 0.9rem;
         }
     }
@@ -57,23 +60,26 @@ const Right = styled.div`
 `
 const Hero = () => {
     return (
-        <Wrapper>
-            <Left>
-                <h1>web design and development</h1>
-                <p>looking for someone to build and maintain your website ?</p>
-                <div className="buttons">
-                    <a href="#contact">
-                        <button className="btn-background">contact</button>
-                    </a>
-                    <a href="#services">
-                        <button className="btn-empty">services</button>
-                    </a>
-                </div>
-            </Left>
-            <Right>
-                <img src={hero} alt="" />
-            </Right>
-        </Wrapper>
+        <>
+            <Wrapper>
+                <Left>
+                    <h1>web design and development</h1>
+                    <Typewriter className="typewriter" string="looking for someone to build and maintain your website ?" delay={80}/>
+                    
+                    <div className="buttons">
+                        <a href="#contact">
+                            <button className="btn-background">contact</button>
+                        </a>
+                        <a href="#services">
+                            <button className="btn-empty">services</button>
+                        </a>
+                    </div>
+                </Left>
+                <Right>
+                    <img src={hero} alt="" />
+                </Right>
+            </Wrapper>
+        </>
     )
 }
 
