@@ -33,7 +33,7 @@ const About = () => {
     return (
         <Wrapper id="about">
             <img src={logo} alt="" />
-            <h3>We are a newly established web development agency based in UK. Simple and specious designs and quick builds this is what we do.
+            <h3>We are a newly established web development agency based in the UK. Simple and spacious designs and quick builds this is what we do.
                 Contact us for any queries and do not hesitate to ask questions.
                 All our quotes are free so there is no harm in getting information. </h3>
         </Wrapper>
