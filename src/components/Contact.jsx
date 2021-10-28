@@ -76,6 +76,7 @@ const Container = styled.div`
     padding: 5vw 1vw;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 30px;
+    
     h1 {
       padding-bottom: 7vw;
       font-size: 2.6rem;
@@ -88,6 +89,12 @@ const Container = styled.div`
       }
     }
     .input-message {
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4vw;
+      }
       textarea {
         padding: 1vw;
         width: 80vw;
@@ -131,7 +138,7 @@ const Contact = () => {
               <input type="submit" value="Submit" />
             </p>
           </div>
-          <p>your details will only be used for communication with us</p>
+          <p >your details will only be used for communication with us</p>
           <Link to="/privacy">
             <span>Privacy Policy</span>
           </Link>
