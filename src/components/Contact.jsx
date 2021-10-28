@@ -19,6 +19,14 @@ const Container = styled.div`
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   background-color: #fdfff5;
   border-radius: 30px;
+  .privacy-text {
+    font-size: 0.5rem;
+    padding: 4vw;
+    span {
+      text-decoration: underline;
+      color: #FCCC00;
+    }
+  }
   h1 {
     padding-bottom: 3vw;
     font-size: 2.2rem;
@@ -138,10 +146,11 @@ const Contact = () => {
               <input type="submit" value="Submit" />
             </p>
           </div>
-          <p >your details will only be used for communication with us</p>
-          <Link to="/privacy">
-            <span>Privacy Policy</span>
-          </Link>
+          <p className="privacy-text">your details will only be used for communication with us for details please check out our
+            <Link to="/privacy">
+              <span > Privacy Policy</span>
+            </Link>
+          </p>
         </form>
       </Container>
     </Wrapper>
