@@ -13,7 +13,8 @@ const Wrapper = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     padding: 10vw;
     gap: 10vw;
     .container-wrapper {
@@ -21,16 +22,17 @@ const Wrapper = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 90%;
     }
     .offer-title {
         h2{
             font-size: 3vw;
             font-weight: 400; 
-            
             text-align: center;
         }  
     }
     @media (max-width:768px){
+        padding: 10vw 0.2vw;
         gap: 20vw;
         .offer-title {
             padding: 20vw 5vw 5vw 5vw;
@@ -39,24 +41,23 @@ const Wrapper = styled.div`
                 color: #000;
                 background: rgba(0,0,0, .1);
             }
-            
         }
     }
-    
 `
 const Container = styled.div`
     display: flex;
     align-items: center;
-    gap: 4vw;
+    gap: 2vw;
     position: relative;
     margin: 1vw 2vw 1vw 2vw;
     padding: 5vw 3vw;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
+    background-color: #fdfff5;
     p {
         font-size: 1.5vw;
         padding-bottom: 5vw;
-        text-align: justify;
+        text-align: left;
     }
     h5 {
         position: absolute;
@@ -75,10 +76,8 @@ const Container = styled.div`
     .container-img {
         width: 60%;
         img {
-           width: 100%;
-           
+           width: 100%; 
         }
-        
     }
     .container-info {
         width: 40%;
@@ -90,8 +89,8 @@ const Container = styled.div`
         justify-content: center;
         align-items: center;
         margin: 0;
-        padding: 0;
-        border-radius:0 ;
+        padding: 5vw;
+        border-radius:10px;
     h2 {
         font-size: 5vw;
     }
@@ -127,46 +126,46 @@ const Container = styled.div`
     }
     }
 `
-
 const Offer = () => {
     return (
-        <Wrapper id="offer">
+        <Wrapper >
             <div className="container-wrapper" >
-            <div className="offer-title" >
-                <h2>pre-built themes with customisation</h2>
-            </div>
-            <Container>
-                <div className="container-img" >
-                    <img src={offer1} alt="" />
+                <div className="offer-title" >
+                    <h2 id="offer">pre-built themes with customisation</h2>
                 </div>
-                <div className="container-info">
-                    <p>Customisation of the theme of your choice can be a good solution for a start. Simply find what you like and let us do the rest.</p>
-                    <Link to="/themes">
-                        <button className="btn-empty">choose your theme</button>
-                    </Link>
-                </div>
-                <h5>from <span>250£</span></h5>
-            </Container>
+                <Container>
+                    <div className="container-img" >
+                        <img src={offer1} alt="" />
+                    </div>
+                    <div className="container-info" >
+                        <p>We let you choose a theme, free or premium (whichever you like) from <a href="https://themewagon.com/theme-category/landing-website/">themewagon</a> and we do the rest.
+                            We work together on photos/sections/paragraphs etc. Updating existing websites with fresh new mobile friendly design.
+                        </p>
+                        <Link to="/themes">
+                            <button className="btn-empty">choose your theme</button>
+                        </Link>
+                    </div>
+                    <h5>from <span>250£</span></h5>
+                </Container>
             </div>
             <div className="container-wrapper">
-            <div className="offer-title">
-                <h2>designed and built from scratch</h2>
-            </div>
-            <Container>
-                <div className="container-img">
-                    <img src={offer2} alt="" />
+                <div className="offer-title">
+                    <h2>designed and built from scratch</h2>
                 </div>
-                <div className="container-info">
-                    <p>We design and build your website from scratch. Allos for great level of personalisation of the web.</p>
-                    <a href="#contact">
-                        <button className="btn-empty">contact</button>
-                    </a>
-                </div>
-                <h5>from <span>500£</span></h5>
-            </Container>
+                <Container>
+                    <div className="container-img">
+                        <img src={offer2} alt="" />
+                    </div>
+                    <div className="container-info">
+                        <p>We design and build your website from scratch. Allows for great level of personalisation of the web. All our quotes are free so do not hesitate to contact us with any possible query.</p>
+                        <a href="#contact">
+                            <button className="btn-empty">contact</button>
+                        </a>
+                    </div>
+                    <h5>from <span>500£</span></h5>
+                </Container>
             </div>
         </Wrapper>
     )
 }
-
 export default Offer

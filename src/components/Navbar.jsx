@@ -32,7 +32,6 @@ const WrapperDesk = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 3vw 2vw 2vw 2vw;
-    background: rgba(81,218,207,1); 
     position: relative;
     .nav-logo {
         img {
@@ -64,13 +63,11 @@ const NavItem = styled.div`
         transition: all 0.12s ease-in-out;
         border-right: 1px solid #000;
         border-left: 1px solid transparent;
-        
         color: #000;
         :hover {
             background-color: #A0DFDD;
             color: #070707;
             border: 1px solid #000;
-            
         }
     }
 `
@@ -96,7 +93,6 @@ const NavItems = [
         id: 4
     }
 ]
-
 const Navbar = () => {
     const [windowDimension, setWindowDimension] = useState(null);
     useEffect(() => {

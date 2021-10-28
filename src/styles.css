@@ -19,6 +19,9 @@
 body {
   width: 100%;
   font-size: 1rem;
+  background: #ecffee;
+  background: -webkit-gradient(linear, left top, right top, from(#ecffee), color-stop(54%, #c6ffce), to(#bef4ff));
+  background: linear-gradient(90deg, #ecffee 0%, #c6ffce 54%, #bef4ff 100%);
 }
 
 @media (max-width: 768px) {
@@ -45,7 +48,7 @@ button {
 }
 
 .btn-background {
-  background: #FCCC00;
+  background: #fccc00;
   font-weight: 400;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
@@ -71,7 +74,7 @@ button {
 }
 
 .btn-empty:hover {
-  background: #51DACF;
+  background: #51dacf;
   color: #fff;
 }
 

@@ -22,13 +22,12 @@ import web24 from '../images/themes/mockup24.png'
 
 const Wrapper = styled.div`
     background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(26,50,121,1) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(26,50,121,1) 100%);
     h1{
         padding: 2vw;
         color: #fff;
         font-size: 3vw;
         font-weight: 800;
-        
         @media (max-width: 768px){
             font-size: 5vw;
             left: 0;
@@ -41,23 +40,17 @@ const Container = styled.div`
     gap: 2vw;
     padding: 0vw 5vw 5vw;
     max-width: 100%;
-    
-    
 `
 const Image = styled.div`
     overflow: hidden;
-    
-    
     img {
      width: 100%;   
      transition: all 0.3s ease-in-out;
      &:hover {
          transform: scale(1.2);
      }
-    }
-    
+    } 
 `
-
 const images = [
     {
         id: 1,
@@ -157,8 +150,6 @@ const images = [
     }
 
 ]
-
-
 const Themes = () => {
     return (
         <Wrapper>
@@ -173,10 +164,6 @@ const Themes = () => {
                 ))}
             </Container>
         </Wrapper>
-
-
-
-
     )
 }
 

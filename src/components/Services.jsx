@@ -6,7 +6,6 @@ import services2 from '../images/services2.png'
 import services3 from '../images/services3.png'
 import services4 from '../images/services4.png'
 
-
 const Wrapper = styled.div`
     background-image: url(${backImg}); /* The image used */
     height: auto;
@@ -17,11 +16,12 @@ const Wrapper = styled.div`
     flex-direction: column;
     padding-top: 1vw;
     @media (max-width:768px){
-        padding: 0;
+        padding: 10vw 0vw;
     }
 `
 const Container = styled.div`
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #fdfff5;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,6 @@ const Container = styled.div`
         max-width:80%;
         max-height: 80%;
         object-fit: contain;
-        
     }
     @media (max-width:768px){
         padding: 2vw;
@@ -58,7 +57,6 @@ const Container = styled.div`
 const Row = styled.div`
     display: flex;
     justify-content: center;
-
     @media (max-width:768px){
         padding: 0;
         flex-direction: column;
@@ -78,12 +76,10 @@ const RowS = styled.div`
     h1 {
         font-size: 2rem;
         font-weight: 900;
-       
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) rotate(90deg);
-        
     }
     .first-list {
         text-align: right;
@@ -116,7 +112,6 @@ const RowS = styled.div`
         height: auto;
         border-radius: 30px;
         padding: 3vw;
-        
         li {
             
             font-size: 1.8vw;
@@ -143,7 +138,6 @@ const RowS = styled.div`
             font-size: 7vw;
             top: 50%;
             left: 5vw;
-            
         }
         ul {
             padding: 10vw 2vw;
@@ -153,7 +147,6 @@ const RowS = styled.div`
             align-items: center;
             width: 70vw;
             box-shadow: none;
-
             li {
                 font-size: 5vw;
                 font-weight: 500;

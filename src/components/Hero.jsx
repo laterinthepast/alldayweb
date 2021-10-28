@@ -5,13 +5,7 @@ import hero from '../images/hero.png'
 const Wrapper = styled.div`
     height: auto;
     display: flex;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(81,218,207,1) 100%);
     padding: 3vw 5vw 5vw;
-    /* background: -moz-radial-gradient(circle, rgba(81,218,207,1) 0%, rgba(248,218,91,1) 53%, rgba(245,223,129,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(81,218,207,1) 0%, rgba(248,218,91,1) 53%, rgba(245,223,129,1) 100%);
-    background: radial-gradient(circle, rgba(81,218,207,1) 0%, rgba(248,218,91,1) 53%, rgba(245,223,129,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#51dacf",endColorstr="#f5df81",GradientType=1); */
     @media (max-width:768px){
         flex-direction: column-reverse;
         justify-content: center;
@@ -19,7 +13,6 @@ const Wrapper = styled.div`
         padding: 5vw 2vw;
     }
 `
-
 const Left = styled.div`
     display: flex;
     flex-direction: column;
@@ -30,7 +23,6 @@ const Left = styled.div`
     h1 {
         font-size: 4vw;
         font-weight: 200;
-        
     }
     p {
         padding-bottom: 5vw;
@@ -51,7 +43,6 @@ const Left = styled.div`
         p {
             font-size: 0.9rem;
         }
-        
     }
 `
 
@@ -62,10 +53,8 @@ const Right = styled.div`
     }
     @media (max-width:768px){
         width: 100%;
-    
     }
 `
-
 const Hero = () => {
     return (
         <Wrapper>
@@ -79,14 +68,11 @@ const Hero = () => {
                     <a href="#services">
                         <button className="btn-empty">services</button>
                     </a>
-
                 </div>
             </Left>
             <Right>
                 <img src={hero} alt="" />
             </Right>
-
-
         </Wrapper>
     )
 }
