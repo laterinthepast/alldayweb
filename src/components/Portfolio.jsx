@@ -5,6 +5,7 @@ import project3desk from '../images/quartz.png'
 import project4desk from '../images/crypto.png'
 import project5desk from '../images/portfolio.png'
 import project6desk from '../images/quartz2.png'
+import project7desk from '../images/nahaku.png'
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -110,9 +111,16 @@ const SliderItems = [
         id: 6,
         img: project6desk,
         title: "quartz scientific v2",
-        desc: "Second iteration of the Quartz Scientific website. Design, build and management. Website buidt from scratch - Currently awaiting client update",
+        desc: "Second iteration of the Quartz Scientific website. Design, build and management. Website built from scratch - Currently awaiting client update",
         href: "https://quartzsample.netlify.app/",
     },
+    {
+        id: 7,
+        img: project7desk,
+        title: "nahaku",
+        desc: "Nahaku is a simple and minimalistic website for a local business. Design, build and management. Website built from scratch - Currently awaiting client update",
+        href: "https://nahakutestv2.netlify.app/",
+    }
 ]
 const Portfolio = () => {
     const settings = {
