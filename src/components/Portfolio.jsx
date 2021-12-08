@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import project2desk from '../images/meller.png'
 import project3desk from '../images/quartz.png'
 import project4desk from '../images/crypto.png'
+import project5desk from '../images/portfolio.png'
+import project6desk from '../images/quartz2.png'
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -96,14 +98,21 @@ const SliderItems = [
         title: "cryptofolio",
         desc: "Cryptofolio is the latest project and not yet completed. Cryptocurrencies wallet with charts and all the necesarry info about majority of cryptoassets. Buildt from scratch using React, styled components and Node.js for backend. Possible finish by the end of 2021.",
         href: "https://github.com/laterinthepast/cryptofolio",
-    }/* ,
+    },
     {
         id: 5,
         img: project5desk,
         title: "lookmummyportfolio.site",
         desc: "Front End Portfolio Website",
         href: "https://lookmummyportfolio.site/",
-    } */
+    },
+    {
+        id: 6,
+        img: project6desk,
+        title: "quartz scientific v2",
+        desc: "Second iteration of the Quartz Scientific website. Design, build and management. Website buidt from scratch - Currently awaiting client update",
+        href: "https://quartzsample.netlify.app/",
+    },
 ]
 const Portfolio = () => {
     const settings = {
