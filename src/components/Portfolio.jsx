@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import project2desk from '../images/meller.png'
 import project3desk from '../images/quartz.png'
 import project4desk from '../images/crypto.png'
-import project5desk from '../images/portfolio.png'
+import project5desk from '../images/dd.png'
 import project6desk from '../images/quartz2.png'
 import project7desk from '../images/nahaku.png'
 import styled from 'styled-components';
@@ -103,9 +103,9 @@ const SliderItems = [
     {
         id: 5,
         img: project5desk,
-        title: "lookmummyportfolio.site",
-        desc: "Front End Portfolio Website",
-        href: "https://lookmummyportfolio.site/",
+        title: "DD",
+        desc: "DeFi Trusted - Community Approved - Your One Stop Shop for Success",
+        href: "https://discorddynamics.com/",
     },
     {
         id: 6,
