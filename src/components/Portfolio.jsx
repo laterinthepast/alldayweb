@@ -96,9 +96,9 @@ const SliderItems = [
     {
         id: 4,
         img: project4desk,
-        title: "cryptofolio",
-        desc: "Cryptofolio is the latest project and not yet completed. Cryptocurrencies wallet with charts and all the necesarry info about majority of cryptoassets. Buildt from scratch using React, styled components and Node.js for backend. Possible finish by the end of 2021.",
-        href: "https://github.com/laterinthepast/cryptofolio",
+        title: "music therapy",
+        desc: "Landing website for a music therapy business.",
+        href: "https://muzykoterapialublin.pl/",
     },
     {
         id: 5,
