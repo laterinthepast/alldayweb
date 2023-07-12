@@ -118,8 +118,8 @@ const SliderItems = [
         id: 7,
         img: project7desk,
         title: "nahaku",
-        desc: "Nahaku is a simple and minimalistic website for a local business. Design, build and management. Website built from scratch - Currently awaiting client update",
-        href: "https://nahakutestv2.netlify.app/",
+        desc: "Nahaku is a simple website for a recording studio in Poland.",
+        href: "https://okolitzastudio.com/",
     }
 ]
 const Portfolio = () => {

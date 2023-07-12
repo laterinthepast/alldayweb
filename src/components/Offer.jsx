@@ -145,7 +145,7 @@ const Offer = () => {
                             <button className="btn-empty">choose your theme</button>
                         </Link>
                     </div>
-                    <h5>from <span>150£</span></h5>
+                    <h5>from <span>350£</span></h5>
                 </Container>
             </div>
             <div className="container-wrapper">
@@ -162,7 +162,7 @@ const Offer = () => {
                             <button className="btn-empty">contact</button>
                         </a>
                     </div>
-                    <h5>from <span>300£</span></h5>
+                    <h5>from <span>600£</span></h5>
                 </Container>
             </div>
         </Wrapper>
