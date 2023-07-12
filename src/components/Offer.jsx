@@ -145,7 +145,7 @@ const Offer = () => {
                             <button className="btn-empty">choose your theme</button>
                         </Link>
                     </div>
-                    <h5>from <span>350£</span></h5>
+                    <h5>from <span>360£</span></h5>
                 </Container>
             </div>
             <div className="container-wrapper">
