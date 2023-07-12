@@ -131,7 +131,7 @@ const Offer = () => {
         <Wrapper >
             <div className="container-wrapper" >
                 <div className="offer-title" >
-                    <h2 id="offer">pre-built themes with customisation</h2>
+                    <h2 id="offer">pre-built themes with customisation ;)</h2>
                 </div>
                 <Container>
                     <div className="container-img" >
